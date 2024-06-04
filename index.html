@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard | Odin Project</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <div class="searchbar">
-                <label for="search"><i></i></label>
+            <!-- <div class="searchbar">
+                <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="text" id="search">
-            </div>
+            </div> -->
             <div class="select-profile">
-                <div class="bell"><i></i></div>
+                <div class="bell">
+                    <!-- <i class="fa-solid fa-bell"></i> -->
+                </div>
                 <div class="user"><img src="" alt=""><h2 class="user-name">Karl James</h2></div>
             </div>
             <div class="display-profile">
@@ -31,21 +34,41 @@
             </nav>
         </header>
         <nav class="side-bar">
-            <h1>Dashboard</h1>
+            <div class="dashboard-text">
+                <i class="fa-solid fa-bars"></i><h1>Dashboard</h1>
+            </div>
             <div class="side-nav">
-                <div class="main-nav">
-                    <h2><i>Home</i></h2>
-                    <h2><i>Profile</i></h2>
-                    <h2><i>Messages</i></h2>
-                    <h2><i>History</i></h2>
-                    <h2><i>Tasks</i></h2>
-                    <h2><i>Communities</i></h2>
-                </div>
-                <div class="info-nav">
-                    <h2><i>Settings</i></h2>
-                    <h2><i>Support</i></h2>
-                    <h2><i>Privacy</i></h2>
-                </div>
+                <ul class="main-nav">
+                    <li>
+                        <i class="fa-solid fa-house"></i><h2>Home</h2>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-id-card"></i><h2>Profile</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-message"></i><h2>Messages</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock-rotate-left"></i><h2>History</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-list-check"></i><h2>Tasks</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-users"></i><h2>Communities</h2>
+                    </li>
+                </ul>
+                <ul class="info-nav">
+                    <li>
+                        <i class="fa-solid fa-gears"></i><h2>Settings</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-circle-question"></i><h2>Support</h2>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-shield-halved"></i><h2>Privacy</h2>
+                    </li>
+                </ul>
             </div>
         </nav>
         <main class="main-content">
